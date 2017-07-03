@@ -42,17 +42,25 @@ describe("sum", function() {
 
 });
 
-function getAndSumPrices() {
-	var doublePrice1 = +prompt("Введите первую цену (в виде десятичной дроби)", "");
-	var doublePrice2 = +prompt("Введите вторую цену (в виде десятичной дроби)", "");
-	var intPrice = +prompt("Введите третью цену (в виде целого числа)", "");
+// function getAndSumPrices() {
+// 	var doublePrice1 = +prompt("Введите первую цену (в виде десятичной дроби)", "");
+// 	var doublePrice2 = +prompt("Введите вторую цену (в виде десятичной дроби)", "");
+// 	var intPrice = +prompt("Введите третью цену (в виде целого числа)", "");
 
-	var sum = doublePrice1 + doublePrice2 + intPrice;
-	alert(sum.toFixed(1));
+// 	var sum = doublePrice1 + doublePrice2 + intPrice;
+// 	alert(sum.toFixed(1));
 
-}
+// }
 
-getAndSumPrices();
+//getAndSumPrices();
+
+var user = {};
+
+user.name = "Вася";
+console
+user.surname = "Петров";
+user.name = "Петров";
+delete user.name;
 
 
 
