@@ -1,18 +1,4 @@
-/*
-*	@author Artem
-*
-*/
-// window.onload = function() {
 
-// 	alert("hello world!");
-
-// }
-
-// var userName = prompt("Введите имя?", "Василий"); //возвращает введенную пользователем строку
-// var isTeaWanted = confirm("Вы хотите чаю?"); //возвращает введенный пользователем ответ на вопрос в булевой форме
-
-// alert( "Посетитель: " + userName );
-// alert( "Чай: " + isTeaWanted );
 /*
  * @param {number} x Число для возведения в степень
  * @param {number} n Показатель степени, натуральное число
@@ -39,18 +25,7 @@ describe("pow", function() {
 	  	makeTest(i);
 	  }
 	});
-
-	describe("isNaN", function() {
-		it ("при возведении в отрицательную степень результат равен NaN", function () {
-			assert(isNaN(pow(2, -1)), "pow(2, -1) не NaN");
-		});
-
-	it("при возведении в дробную степень результат NaN", function() {
-    assert(isNaN(pow(2, 1.5)), "pow(2, 1.5) не NaN");
-  });
-
-	});
-
+	
 });
 
 
@@ -78,7 +53,7 @@ function getAndSumPrices() {
 }
 
 getAndSumPrices();
-//
+
 
 
 
