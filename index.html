@@ -4,34 +4,11 @@
 
 <head>
   <meta charset="utf-8">
-
-  <!-- подключаем стили Mocha, для отображения результатов -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
-  <!-- подключаем библиотеку Mocha -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
-  <!-- настраиваем Mocha: предстоит BDD-тестирование -->
-  <script>
-    mocha.setup('bdd');
-  </script>
-
-  <!-- подключаем chai -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
-  <!-- в chai есть много всего, выносим assert в глобальную область -->
-  <script>
-    var assert = chai.assert;
-  </script>
+  <!--Библиотеки Chai, Mocha и Sinon объединены в один файл: этот файл содержит код библиотек, стили, настройки для них и запуск mocha.run по окончании загрузки страницы. Если нет элемента с id="mocha", то результаты выводятся в <body>.-->
+  <script src="https://js.cx/test/libs.js"></script>
 </head>
 
 <body>
-
-  <script>
-    function pow(x, n) {
-      /* код функции, пока что пусто */
-    }
-    function sum(a, b) {
-	return a + a;
-}
-  </script>
 
   <!-- в этом скрипте находятся спеки -->
   <script src="assets/js/main.js"></script>
@@ -39,10 +16,6 @@
   <!-- в элементе с id="mocha" будут результаты тестов -->
   <div id="mocha"></div>
 
-  <!-- запустить тесты! -->
-  <script>
-    mocha.run();
-  </script>
 </body>
 
 </html>
